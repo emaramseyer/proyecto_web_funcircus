@@ -1,0 +1,599 @@
+
+/*RESETEO DEL SITIO*/
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box; /* es para mantener un tamaño fijo de una caja*/
+}
+
+/*---ESTILOS GENERAL---*/
+html{
+    font-size: 62.5%;    
+}
+
+body{
+    background-color: #202020;
+    /* background-color:black; */
+    font-style: italic;   
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1000px;    
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(116, 13, 13, 0.495);
+    color: orange;
+    margin: 5px 275px;
+}
+
+
+
+
+/* ---------------CONTENEDOR INDEX------------------------*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 0.1fr;
+    grid-template-areas:     
+    "logo"
+    "menus"
+    "main"
+    "desc"
+    "footer";    
+}
+
+.area_logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center; 
+}
+
+.menu_principal{
+    grid-area: menus; 
+}
+
+.area_main{
+    grid-area: main;
+}
+
+.descripcion_banda{
+    grid-area: desc;
+}
+
+.area_footer{
+    grid-area: footer;
+             
+}
+
+/*----------------------HEADER(Todas las paginas)----------------*/
+.logo{
+    width: 500px;
+    height: 100%;
+    border-left: solid 1px orange;
+    border-right: solid 1px orange;
+    padding: 5px;           
+} 
+
+#grad{
+    background-image: linear-gradient(to top, black,  #202020);
+}
+
+.menu_principal{
+    background-color: rgba(116, 13, 13, 0.495);   
+    text-align: center; 
+    border-top: solid 1px orange;
+    border-bottom: solid 1px orange;        
+}
+
+.menu_principal ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+.menu_principal ul li{
+    list-style-type: none; 
+    padding: 20px 20px; 
+    /* display: inline-block; */ /* si se habilita, se debe deshabilitar el display flex del menu_principal ul */
+}
+
+.menu_principal ul li a{
+    color: orange;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 5px;
+    font-weight: bold;
+    background-color: #202020;  
+    /* background-color: rgba(116, 13, 13, 0.495); */
+}
+
+.menu_principal ul li a:hover{
+    background-color: orange;
+    color:black;
+}
+
+
+/* -----------------MAIN(Pagina Index)-------------- */
+.estilos_foto_principal{
+    text-align: center;
+}
+
+.estilos_foto_principal img{
+    width: 30%;
+    height: 30%;
+    padding: 5px;
+    border: solid 1px orange; 
+    margin: 40px;   
+}
+
+.descripcion_banda{
+    margin: 20px 300px;
+    padding: 10px; 
+    border-top: solid 1px orange;
+    /* background-color: rgba(116, 13, 13, 0.495); */
+     
+}
+
+.descripcion_banda p{
+    font-size: 15px;       
+    color: orange;     
+}
+
+.descripcion_banda p span{
+    background-color: orange;       
+    color: black;
+    font-weight: bold;
+    padding: 2px;     
+}
+
+/* --------------------FOOTER(Todas las paginas)---------------- */
+footer{      
+    position: fixed;
+    bottom: 1px;                   
+}
+
+/* ------------- PAGINA COMIC------------------------------*/
+.estilos_comic{    
+    background-image: url("../multimedia/tapa2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px; 
+    margin: 30px;            
+}
+
+.estilos_comic ul li a{
+    color: orange;
+    text-decoration: none;
+    font-size: 18px;
+    border: solid 1px orange;
+    padding: 5px;
+    font-weight: bold;
+    background-color: black;        
+}
+
+.estilos_comic ul li{    
+    font-weight: bold;
+    text-align: center; 
+    padding: 10px ; 
+    list-style-type: none;          
+}
+
+.estilos_comic ul{
+    padding: 60px;
+}
+.capitulos div{
+    background-color:  rgba(116, 13, 13, 0.495);
+    margin: 10px 150px;
+    padding: 5px;
+    text-align: center;
+}
+
+.capitulos div img{
+    width: 500px;
+    height: 800px;
+    margin: 5px;         
+}
+
+.capitulos h2{
+    font-size: 20px;
+    text-align: justify;
+    color: orange;
+    margin: 10px 150px;
+}
+
+.capitulos div a{
+    color: orangered;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;    
+}
+
+.intro_comic{
+    color: orange;
+    font-size: 15px;
+    background-color:  rgba(116, 13, 13, 0.495);
+    margin: 10px 275px;
+    padding: 5px;
+    text-align: justify;
+}
+
+/* ----TAMAÑO TABLET-------- */
+
+ @media  screen and (max-width: 768px ) {
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.8fr 0.1fr 0.1fr;
+        grid-template-areas:     
+        "logo logo"
+        "main menus"
+        "desc desc"
+        "footer footer";    
+    }    
+
+    .menu_principal{
+        /* grid-area: menus; */ 
+        height: 100%;                                         
+    }
+
+    .menu_principal ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 35px 0px;
+               
+    } 
+
+    .menu_principal ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        padding: 10px 10px;
+        margin: 0px 80px;        
+    }
+
+    .descripcion_banda{
+        margin: 10px 0px;
+        border-top: none;             
+    }     
+
+    .estilos_foto_principal img{
+        width: 80%;
+        height: 80%;     
+    }
+
+    .estilos_foto_principal{
+        border: solid 1px orange;       
+    }
+
+    footer{      
+        position: inherit;                               
+    }    
+    
+    footer div{
+        text-align: center;
+        background-color: rgba(116, 13, 13, 0.495); 
+        padding: 50px; 
+        margin: 70px 0px;    
+    }
+
+    #grad_footer{
+        background-image: linear-gradient(to top, black,  #202020);
+    }
+
+    /*------------pagina comic------- */
+
+    .intro_comic{
+        background-color: #202020;
+        margin: 0px;
+        padding: 10px;
+        text-align: justify;
+        font-size: 12px;        
+    }
+
+    /* .estilos_comic{ 
+        display: none;                
+    } */
+
+    .estilos_comic{
+        background-image: none;
+        margin: 0px;
+        height: 50px;
+        
+               
+    }
+
+    .estilos_comic ul{
+        padding: 10px;
+        border-bottom: solid 1px orange;
+        
+    }
+
+    h1{
+        text-align: center;
+        background-color: #202020; 
+        /* background-color: rgba(116, 13, 13, 0.495); */
+        margin: 0px;
+        border-top: solid 1px orange;
+    }
+
+    .capitulos div{        
+        margin: 10px 50px;        
+    }    
+
+} 
+
+/* ----TAMAÑO CELU-------- */
+
+@media  screen and (max-width: 425px ) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr;
+        grid-template-areas:     
+        "logo"        
+        "main"
+        "menus"
+        "footer";    
+    }    
+
+    .menu_principal ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .menu_principal ul li{
+        padding: 15px 15px; 
+        
+    }
+
+    .descripcion_banda{
+        display: none;       
+    }    
+
+    .estilos_foto_principal img{
+        width: 50%;
+        height: 50%; 
+           
+    }
+
+    .estilos_foto_principal{
+        border: none;          
+             
+    }
+
+    footer{      
+        position: inherit;                               
+    }    
+    
+    footer div{
+        text-align: center;
+        background-color: rgba(116, 13, 13, 0.495); 
+        padding: 30px; 
+        margin: 20px 0px;    
+    }
+
+    #grad_footer{
+        background-image: linear-gradient(to top, black,  #202020);
+    }
+} 
+
+
+
+
+/* ---------PAGINA INTEGRANTES---------------------*/
+.estilos_lista_integrantes{
+    text-align: center;
+    padding: 40px 500px ;        
+    background-image: url("../multimedia/integrantes.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;          
+}
+
+.estilos_lista_integrantes ul li a{
+    color: orange;
+    font-size: 18px;
+    line-height: 4; 
+    margin: 15px;
+    font-weight: bold;
+    background-color: black;            
+}
+
+.bajo{        
+    list-style-image:url("../multimedia/bajo.png"); 
+           
+}
+.voz{    
+    list-style-image:url("../multimedia/voz.png");    
+}
+.guitarra{    
+    list-style-image:url("../multimedia/guitarra.png");
+}
+.bata{    
+    list-style-image:url("../multimedia/bata.png");
+}
+
+.integrantes_banda{
+    display: inline-block;
+    text-align: center;    
+}
+
+.integrantes_banda div{
+    background-color: rgba(116, 13, 13, 0.495);
+    width: 700px;
+    height: 390px;
+    margin: 20px;
+    display: inline-block;      
+}
+
+.integrantes_banda div p{
+    color: orange; 
+    font-size: 15px; 
+    text-align: justify;
+    padding: 10px;          
+}
+
+.integrantes_banda div img{
+    width: 50%;
+    height: 70%;
+    margin: 5px;
+}
+
+.integrantes_banda div p span{
+    font-size: 20px;
+    background-color: orange;
+    color: black; 
+    font-weight: bold;
+    padding: 4px;   
+}
+
+.integrantes_banda div a{
+    color: orangered;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 655px;
+}
+
+/* ------------- PAGINA CONTACTO------------------------------*/
+.estilos_formulario{
+    color: orange; 
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(116, 13, 13, 0.495);
+    margin: 5px 275px;
+}
+
+.estilos_formulario div{
+    display: block;
+    margin: 20px;       
+}
+
+.mensaje label{
+    display: block;
+    margin: 0px 300px 0px 5px;    
+}
+
+.estilos_formulario div input, textarea{
+    background-color: orange;
+    font-size: 20px;         
+}
+
+.estilos_formulario select{
+    background-color: orange;
+    font-size: 15px;
+    font-weight: bold;     
+}
+
+/* ------------- PAGINA MULTIMEDIA------------------------------*/
+.videos_funcircus div{
+    background-color: rgba(116, 13, 13, 0.495);
+    margin: 10px 275px;
+    padding: 5px;    
+}
+
+.videos_funcircus h2{
+    font-size: 20px;
+    text-align: justify;
+    color: orange;
+    margin: 0px 275px;
+}
+
+.videos_funcircus p{
+    color: orange;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.menu_multimedia{
+    text-align: center;
+}
+
+.menu_multimedia ul li a{
+    color: orange;
+    font-size: 18px;
+    line-height: 4; 
+    margin: 15px;
+    font-weight: bold;
+    background-color: rgba(116, 13, 13, 0.495);
+    text-decoration: none;
+}
+
+.videos_funcircus div a{
+    color: orangered;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;    
+}
+
+
+/* ------------- PAGINA DISCOGRAFIA------------------------------*/
+.discografia_funcircus div{
+    background-color: rgba(116, 13, 13, 0.495);
+    margin: 10px 275px;
+    padding: 5px;    
+}
+
+.discografia_funcircus h2{
+    font-size: 20px;
+    text-align: justify;
+    color: orange;
+    margin: 0px 275px;
+}
+
+.discografia_funcircus p{
+    color: orange;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.discografia_funcircus div a{
+    color: orangered;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;    
+}
+
+/*--PAGINA PRUEBA-FLEXBOX*/
+
+.flex_padre{
+    /*height: 1500px;*/
+    /*background-color:rgb(182, 17, 17);*/
+    /*margin: 40px 275px;*/
+    color: orange;
+    font-size: 15px;
+    /*border: solid 2px orange;*/
+    
+    display: flex;
+    flex-direction: row;
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    flex-wrap: wrap;
+    /*flex-wrap: wrap-reverse;*/
+    
+    justify-content: center;
+
+    /* ALIGN ITEM SE UTILIZA SI TENEMOS SOLO 1 LINEA/FILA DE HIJOS*/
+    /*align-items: stretch; /*solo funciona si los hijos no tienen ningun tamaño predeterminado*/
+    /*align-items: center;*/
+    /* ALIGN CONTENT SE UTILIZA SI TENEMOS MAS DE 1 LINEA/FILA DE HIJOS*/
+    /*align-content: center;*/
+}
+.flex_padre div img{
+    margin: 10px;
+}
+  
+
+
+
+
+
