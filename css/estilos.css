@@ -32,47 +32,7 @@ h1{
     margin: 5px 275px;
 }
 
-
-
-
-/* ---------------CONTENEDOR INDEX------------------------*/
-
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 0.1fr;
-    grid-template-areas:     
-    "logo"
-    "menus"
-    "main"
-    "desc"
-    "footer";    
-}
-
-.area_logo{
-    grid-area: logo;
-    display: flex;
-    justify-content: center; 
-}
-
-.menu_principal{
-    grid-area: menus; 
-}
-
-.area_main{
-    grid-area: main;
-}
-
-.descripcion_banda{
-    grid-area: desc;
-}
-
-.area_footer{
-    grid-area: footer;
-             
-}
-
-/*----------------------HEADER(Todas las paginas)----------------*/
+/*----------------------LOGO Y HEADER(Todas las paginas)----------------*/
 .logo{
     width: 500px;
     height: 100%;
@@ -119,6 +79,42 @@ h1{
     color:black;
 }
 
+/* ---------------CONTENEDOR INDEX------------------------*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 0.1fr;
+    grid-template-areas:     
+    "logo"
+    "menus"
+    "main"
+    "desc"
+    "footer";    
+}
+
+.area_logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center; 
+}
+
+.menu_principal{
+    grid-area: menus; 
+}
+
+.area_main{
+    grid-area: main;
+}
+
+.descripcion_banda{
+    grid-area: desc;
+}
+
+.area_footer{
+    grid-area: footer;
+             
+}
 
 /* -----------------MAIN(Pagina Index)-------------- */
 .estilos_foto_principal{
