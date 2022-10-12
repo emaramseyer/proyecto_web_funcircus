@@ -310,8 +310,7 @@ footer{
     text-align: justify;
 }
 
-.foto_comic{
-    
+.foto_comic{    
     padding: 40px;
 }
 
@@ -365,13 +364,7 @@ footer{
     color:black;
 }
 
-.estilos_comic{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.foto_comic{
+.alinear{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -389,14 +382,18 @@ footer{
 
 .estilos_comic ul li{    
     font-weight: bold;
-    text-align: center; 
     padding: 10px ; 
-    list-style-type: none;          
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;          
 }
 
 .estilos_comic ul{
-    padding: 60px;
+    padding: 25px; 
+    margin: 10px 50px 0px 0px;        
 }
+
 .capitulos div{
     background-color:  rgba(116, 13, 13, 0.495);
     margin: 10px 150px;
