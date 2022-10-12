@@ -60,8 +60,7 @@ h1{
 
 .menu_principal ul li{
     list-style-type: none; 
-    padding: 20px 20px; 
-    /* display: inline-block; */ /* si se habilita, se debe deshabilitar el display flex del menu_principal ul */
+    padding: 20px 20px;    
 }
 
 .menu_principal ul li a{
@@ -278,13 +277,102 @@ footer{
 
 /* -------------  CONTENEDOR COMIC------------------------------*/
 
-.estilos_comic{    
-    background-image: url("../multimedia/tapa2.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 600px; 
-    margin: 30px;            
+.contenedor_comic{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.01fr 0.01fr 0.1fr 0.3fr 0.01fr;
+    grid-template-areas:     
+    "logo_comic"
+    "menu_comic"
+    "main_comic"    
+    "capitulos"
+    "footer_comic"; 
 }
+
+.area_logo_comic{
+    grid-area: logo_comic;
+    display: flex;
+    justify-content: center; 
+}
+
+.area_main_comic{
+    grid-area: main_comic;
+
+}
+
+
+.intro_comic{
+    
+    color: orange;
+    font-size: 15px;
+    background-color:  rgba(116, 13, 13, 0.495);
+    margin: 10px 275px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.foto_comic{
+    
+    padding: 40px;
+}
+
+
+.capitulos{
+    grid-area: capitulos;
+}
+
+.area_footer_comic{
+    grid-area: footer_comic;
+             
+}
+
+/*----------------------Logo y header comic----------------*/
+.logo_comic{
+    width: 500px;
+    height: 100%;
+    border-left: solid 1px orange;
+    border-right: solid 1px orange;
+    padding: 5px;           
+} 
+
+#grad{
+    background-image: linear-gradient(to top, black,  #202020);
+}
+
+.menu_principal_comic{
+    grid-area: menu_comic; 
+    background-color: rgba(116, 13, 13, 0.495);   
+    text-align: center; 
+    border-top: solid 1px orange;
+    border-bottom: solid 1px orange;        
+}
+
+.menu_principal_comic ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+.menu_principal_comic ul li{
+    list-style-type: none; 
+    padding: 20px 20px;    
+}
+
+.menu_principal_comic ul li a{
+    color: orange;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 5px;
+    font-weight: bold;
+    background-color: #202020;  
+    /* background-color: rgba(116, 13, 13, 0.495); */
+}
+
+.menu_principal_comic ul li a:hover{
+    background-color: orange;
+    color:black;
+}
+
 
 .estilos_comic ul li a{
     color: orange;
@@ -334,14 +422,6 @@ footer{
     text-align: center;    
 }
 
-.intro_comic{
-    color: orange;
-    font-size: 15px;
-    background-color:  rgba(116, 13, 13, 0.495);
-    margin: 10px 275px;
-    padding: 5px;
-    text-align: justify;
-}
 
 
 /* ---------PAGINA INTEGRANTES---------------------*/
