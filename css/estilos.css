@@ -116,7 +116,7 @@ h1{
              
 }
 
-/* -----------------MAIN(Pagina Index)-------------- */
+/* -----------------(Pagina Index)-------------- */
 .estilos_foto_principal{
     text-align: center;
 }
@@ -155,7 +155,129 @@ footer{
     bottom: 1px;                   
 }
 
-/* ------------- PAGINA COMIC------------------------------*/
+
+/* ----TAMAÑO TABLET INDEX-------- */
+
+ @media  screen and (max-width: 768px ) {
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.8fr 0.1fr 0.1fr;
+        grid-template-areas:     
+        "logo logo"
+        "main menus"
+        "desc desc"
+        "footer footer";    
+    }    
+
+    .menu_principal{
+        /* grid-area: menus; */ 
+        height: 100%;                                         
+    }
+
+    .menu_principal ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 35px 0px;
+               
+    } 
+
+    .menu_principal ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        padding: 10px 10px;
+        margin: 0px 80px;        
+    }
+
+    .descripcion_banda{
+        margin: 10px 0px;
+        border-top: none;             
+    }     
+
+    .estilos_foto_principal img{
+        width: 80%;
+        height: 80%;     
+    }
+
+    .estilos_foto_principal{
+        border: solid 1px orange;       
+    }
+
+    footer{      
+        position: inherit;                               
+    }    
+    
+    footer div{
+        text-align: center;
+        background-color: rgba(116, 13, 13, 0.495); 
+        padding: 50px; 
+        margin: 70px 0px;    
+    }
+
+    #grad_footer{
+        background-image: linear-gradient(to top, black,  #202020);
+    }
+    
+} 
+
+/* ----TAMAÑO CELU INDEX-------- */
+
+@media  screen and (max-width: 425px ) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr;
+        grid-template-areas:     
+        "logo"        
+        "main"
+        "menus"
+        "footer";    
+    }    
+
+    .menu_principal ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .menu_principal ul li{
+        padding: 15px 15px; 
+        
+    }
+
+    .descripcion_banda{
+        display: none;       
+    }    
+
+    .estilos_foto_principal img{
+        width: 50%;
+        height: 50%; 
+           
+    }
+
+    .estilos_foto_principal{
+        border: none;          
+             
+    }
+
+    footer{      
+        position: inherit;                               
+    }    
+    
+    footer div{
+        text-align: center;
+        background-color: rgba(116, 13, 13, 0.495); 
+        padding: 30px; 
+        margin: 20px 0px;    
+    }
+
+    #grad_footer{
+        background-image: linear-gradient(to top, black,  #202020);
+    }
+} 
+
+/* -------------  CONTENEDOR COMIC------------------------------*/
+
 .estilos_comic{    
     background-image: url("../multimedia/tapa2.jpg");
     background-repeat: no-repeat;
@@ -220,168 +342,6 @@ footer{
     padding: 5px;
     text-align: justify;
 }
-
-/* ----TAMAÑO TABLET-------- */
-
- @media  screen and (max-width: 768px ) {
-    .contenedor{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.8fr 0.1fr 0.1fr;
-        grid-template-areas:     
-        "logo logo"
-        "main menus"
-        "desc desc"
-        "footer footer";    
-    }    
-
-    .menu_principal{
-        /* grid-area: menus; */ 
-        height: 100%;                                         
-    }
-
-    .menu_principal ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 35px 0px;
-               
-    } 
-
-    .menu_principal ul li{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;        
-        padding: 10px 10px;
-        margin: 0px 80px;        
-    }
-
-    .descripcion_banda{
-        margin: 10px 0px;
-        border-top: none;             
-    }     
-
-    .estilos_foto_principal img{
-        width: 80%;
-        height: 80%;     
-    }
-
-    .estilos_foto_principal{
-        border: solid 1px orange;       
-    }
-
-    footer{      
-        position: inherit;                               
-    }    
-    
-    footer div{
-        text-align: center;
-        background-color: rgba(116, 13, 13, 0.495); 
-        padding: 50px; 
-        margin: 70px 0px;    
-    }
-
-    #grad_footer{
-        background-image: linear-gradient(to top, black,  #202020);
-    }
-
-    /*------------pagina comic------- */
-
-    .intro_comic{
-        background-color: #202020;
-        margin: 0px;
-        padding: 10px;
-        text-align: justify;
-        font-size: 12px;        
-    }
-
-    /* .estilos_comic{ 
-        display: none;                
-    } */
-
-    .estilos_comic{
-        background-image: none;
-        margin: 0px;
-        height: 50px;
-        
-               
-    }
-
-    .estilos_comic ul{
-        padding: 10px;
-        border-bottom: solid 1px orange;
-        
-    }
-
-    h1{
-        text-align: center;
-        background-color: #202020; 
-        /* background-color: rgba(116, 13, 13, 0.495); */
-        margin: 0px;
-        border-top: solid 1px orange;
-    }
-
-    .capitulos div{        
-        margin: 10px 50px;        
-    }    
-
-} 
-
-/* ----TAMAÑO CELU-------- */
-
-@media  screen and (max-width: 425px ) {
-    .contenedor{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr;
-        grid-template-areas:     
-        "logo"        
-        "main"
-        "menus"
-        "footer";    
-    }    
-
-    .menu_principal ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } 
-
-    .menu_principal ul li{
-        padding: 15px 15px; 
-        
-    }
-
-    .descripcion_banda{
-        display: none;       
-    }    
-
-    .estilos_foto_principal img{
-        width: 50%;
-        height: 50%; 
-           
-    }
-
-    .estilos_foto_principal{
-        border: none;          
-             
-    }
-
-    footer{      
-        position: inherit;                               
-    }    
-    
-    footer div{
-        text-align: center;
-        background-color: rgba(116, 13, 13, 0.495); 
-        padding: 30px; 
-        margin: 20px 0px;    
-    }
-
-    #grad_footer{
-        background-image: linear-gradient(to top, black,  #202020);
-    }
-} 
-
-
 
 
 /* ---------PAGINA INTEGRANTES---------------------*/
