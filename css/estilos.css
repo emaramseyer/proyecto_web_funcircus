@@ -300,7 +300,6 @@ footer{
 
 }
 
-
 .intro_comic{
     
     color: orange;
@@ -333,12 +332,10 @@ footer{
     border-left: solid 1px orange;
     border-right: solid 1px orange;
     padding: 5px;           
-} 
-
+}
 #grad{
     background-image: linear-gradient(to top, black,  #202020);
 }
-
 .menu_principal_comic{
     grid-area: menu_comic; 
     background-color: rgba(116, 13, 13, 0.495);   
@@ -346,18 +343,15 @@ footer{
     border-top: solid 1px orange;
     border-bottom: solid 1px orange;        
 }
-
 .menu_principal_comic ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-} 
-
+}
 .menu_principal_comic ul li{
     list-style-type: none; 
     padding: 20px 20px;    
 }
-
 .menu_principal_comic ul li a{
     color: orange;
     text-decoration: none;
@@ -365,14 +359,23 @@ footer{
     padding: 5px 5px;
     font-weight: bold;
     background-color: #202020;  
-    /* background-color: rgba(116, 13, 13, 0.495); */
 }
-
 .menu_principal_comic ul li a:hover{
     background-color: orange;
     color:black;
 }
 
+.estilos_comic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foto_comic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .estilos_comic ul li a{
     color: orange;
