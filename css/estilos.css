@@ -38,7 +38,7 @@ h1{
     height: 100%;
     border-left: solid 1px orange;
     border-right: solid 1px orange;
-    padding: 5px;           
+    padding: 1px;           
 } 
 
 #grad{
@@ -231,6 +231,14 @@ footer{
         "menus"
         "footer";    
     }    
+
+    .logo{
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 1px orange;
+                   
+    } 
+
 
     .menu_principal ul{
         display: flex;
