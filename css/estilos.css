@@ -18,12 +18,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-/* header{
-    position: sticky;
-    top: 0px;
-    z-index: 1000px;    
-} */
-
 h1{
     font-size: 25px;
     text-align: center;
@@ -79,14 +73,11 @@ h1{
 }
 
 .menu_principal{
-    /* position: sticky;
-    top: 0px;
-    z-index: 2000px; */
     grid-area: menus; 
     background-color: rgba(116, 13, 13, 0.495);   
     text-align: center; 
     border-top: solid 1px orange;
-    border-bottom: solid 1px orange;          
+    border-bottom: solid 1px orange;           
 }
 
 .menu_principal ul{
@@ -106,8 +97,7 @@ h1{
     font-size: 18px;
     padding: 5px 5px;
     font-weight: bold;
-    background-color: #202020;  
-    /* background-color: rgba(116, 13, 13, 0.495); */
+    background-color: #202020;     
 }
 
 .menu_principal ul li a:hover{
@@ -116,12 +106,13 @@ h1{
 }
 
 .estilos_foto_principal{
+    height: auto;
     text-align: center;
 }
 
 .estilos_foto_principal img{
     width: 30%;
-    height: 30%;
+    height: auto;      
     padding: 5px;
     border: solid 1px orange; 
     margin: 40px;   
@@ -169,21 +160,24 @@ footer{
         "footer footer";    
     }    
 
+    .area_logo{
+        border-bottom: solid 1px orange;        
+    }
+
     .header_index{
         position: inherit;
     }
 
     .menu_principal{
-        /* position: inherit; */        
-        height: 100%;                                         
+        border-top: none;
+        border-bottom: none;
+        margin: 0px;             
     }
 
     .menu_principal ul{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 35px 0px;
-               
+        justify-content: center;               
     } 
 
     .menu_principal ul li{
@@ -195,17 +189,25 @@ footer{
     }
 
     .descripcion_banda{
-        margin: 10px 0px;
-        border-top: none;             
+        margin: 0px;                    
     }     
 
-    .estilos_foto_principal img{
-        width: 80%;
-        height: 80%;     
+    .area_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
     }
 
     .estilos_foto_principal{
-        border: solid 1px orange;       
+        display: flex;
+        flex-direction: row;
+        justify-content: center;                
+    }
+
+    .estilos_foto_principal img{
+        width: 65%;
+        height: auto;
+        margin: 0px;        
     }
 
     footer{      
@@ -216,7 +218,7 @@ footer{
         text-align: center;
         background-color: rgba(116, 13, 13, 0.495); 
         padding: 50px; 
-        margin: 70px 0px;    
+        margin: 5px 0px;    
     }
 
     #grad_footer{
@@ -241,20 +243,19 @@ footer{
 
     .logo{
         border-left: none;
-        border-right: none;
-        border-bottom: solid 1px orange;
-                   
+        border-right: none;                         
     } 
 
     .menu_principal ul{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border-top: solid 1px orange;
+        border-bottom: solid 1px orange;
     } 
 
     .menu_principal ul li{
-        padding: 15px 15px; 
-        
+        padding: 15px 15px;        
     }
 
     .descripcion_banda{
@@ -263,13 +264,12 @@ footer{
 
     .estilos_foto_principal img{
         width: 50%;
-        height: 50%; 
-           
+        height: auto;
+        margin: 20px;           
     }
 
     .estilos_foto_principal{
-        border: none;          
-             
+        border: none;              
     }
 
     footer{      
