@@ -18,11 +18,11 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-header{
+/* header{
     position: sticky;
     top: 0px;
     z-index: 1000px;    
-}
+} */
 
 h1{
     font-size: 25px;
@@ -32,7 +32,21 @@ h1{
     margin: 5px 275px;
 }
 
-/*----------------------LOGO Y HEADER(Todas las paginas)----------------*/
+
+/* ---------------CONTENEDOR INDEX------------------------*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 0.1fr;
+    grid-template-areas:     
+    "logo"
+    "menus"
+    "main"
+    "desc"
+    "footer";    
+}
+
 .logo{
     width: 500px;
     height: 100%;
@@ -45,11 +59,34 @@ h1{
     background-image: linear-gradient(to top, black,  #202020);
 }
 
+.area_logo{
+    position: sticky;
+    top: 0px;
+    z-index: 1000px;
+    grid-area: logo;
+    display: flex;
+    justify-content: center; 
+}
+
+.header_index{
+    position: sticky;
+    top: 94px;
+    z-index: 1000px;
+}
+
+.area_main{
+    grid-area: main;
+}
+
 .menu_principal{
+    /* position: sticky;
+    top: 0px;
+    z-index: 2000px; */
+    grid-area: menus; 
     background-color: rgba(116, 13, 13, 0.495);   
     text-align: center; 
     border-top: solid 1px orange;
-    border-bottom: solid 1px orange;        
+    border-bottom: solid 1px orange;          
 }
 
 .menu_principal ul{
@@ -78,43 +115,6 @@ h1{
     color:black;
 }
 
-/* ---------------CONTENEDOR INDEX------------------------*/
-
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 0.1fr;
-    grid-template-areas:     
-    "logo"
-    "menus"
-    "main"
-    "desc"
-    "footer";    
-}
-
-.area_logo{
-    grid-area: logo;
-    display: flex;
-    justify-content: center; 
-}
-
-.menu_principal{
-    grid-area: menus; 
-}
-
-.area_main{
-    grid-area: main;
-}
-
-.descripcion_banda{
-    grid-area: desc;
-}
-
-.area_footer{
-    grid-area: footer;                 
-}
-
-/* -----------------(Pagina Index)-------------- */
 .estilos_foto_principal{
     text-align: center;
 }
@@ -128,11 +128,10 @@ h1{
 }
 
 .descripcion_banda{
+    grid-area: desc;
     margin: 20px 300px;
     padding: 10px; 
-    border-top: solid 1px orange;
-    /* background-color: rgba(116, 13, 13, 0.495); */
-     
+    border-top: solid 1px orange;     
 }
 
 .descripcion_banda p{
@@ -147,7 +146,10 @@ h1{
     padding: 2px;     
 }
 
-/* --------------------FOOTER(Todas las paginas)---------------- */
+.area_footer{
+    grid-area: footer;                 
+}
+
 footer{      
     position: fixed;
     bottom: 1px;                   
@@ -167,8 +169,12 @@ footer{
         "footer footer";    
     }    
 
+    .header_index{
+        position: inherit;
+    }
+
     .menu_principal{
-        /* grid-area: menus; */ 
+        /* position: inherit; */        
         height: 100%;                                         
     }
 
@@ -223,8 +229,7 @@ footer{
 
 @media  screen and (max-width: 425px ) {
     .contenedor{
-        width: 100%;
-        
+        width: 100%;        
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr;
         grid-template-areas:     
