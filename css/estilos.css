@@ -223,6 +223,7 @@ footer{
 
 @media  screen and (max-width: 425px ) {
     .contenedor{
+        text-align: center;
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr;
         grid-template-areas:     
@@ -238,7 +239,6 @@ footer{
         border-bottom: solid 1px orange;
                    
     } 
-
 
     .menu_principal ul{
         display: flex;
