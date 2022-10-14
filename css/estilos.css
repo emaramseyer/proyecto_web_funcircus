@@ -30,6 +30,7 @@ h1{
 /* ---------------CONTENEDOR INDEX------------------------*/
 
 .contenedor{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 0.1fr;
@@ -119,6 +120,7 @@ h1{
 }
 
 .descripcion_banda{
+    
     grid-area: desc;
     margin: 20px 300px;
     padding: 10px; 
@@ -138,12 +140,9 @@ h1{
 }
 
 .area_footer{
-    grid-area: footer;                 
-}
-
-footer{      
+    grid-area: footer;
     position: fixed;
-    bottom: 1px;                   
+    bottom: 1px;                 
 }
 
 
@@ -151,6 +150,7 @@ footer{
 
  @media  screen and (max-width: 768px ) {
     .contenedor{
+        width: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.1fr 0.8fr 0.1fr 0.1fr;
         grid-template-areas:     
@@ -210,17 +210,17 @@ footer{
         margin: 0px;        
     }
 
-    footer{      
+    .area_footer{      
         position: inherit;                               
     }    
     
-    footer div{
+    .area_footer div{
         text-align: center;
         background-color: rgba(116, 13, 13, 0.495); 
         padding: 50px; 
         margin: 5px 0px;    
-    }
-
+    }    
+    
     #grad_footer{
         background-image: linear-gradient(to top, black,  #202020);
     }
@@ -231,7 +231,7 @@ footer{
 
 @media  screen and (max-width: 425px ) {
     .contenedor{
-        width: 100%;        
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr;
         grid-template-areas:     
@@ -272,11 +272,11 @@ footer{
         border: none;              
     }
 
-    footer{      
+    .area_footer{      
         position: inherit;                               
     }    
     
-    footer div{
+    .area_footer div{
         text-align: center;
         background-color: rgba(116, 13, 13, 0.495); 
         padding: 30px; 
@@ -291,6 +291,7 @@ footer{
 /* -------------  CONTENEDOR COMIC------------------------------*/
 
 .contenedor_comic{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.3fr 0.01fr;
@@ -380,7 +381,7 @@ footer{
     grid-area: alinear;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center;               
 }
 
 .estilos_comic ul li a{
@@ -441,13 +442,16 @@ footer{
 }
 
 .area_footer_comic{
-    grid-area: footer_comic;             
+    grid-area: footer_comic;
+    position: fixed;
+    bottom: 1px;                 
 }
 
 /* ----TAMAÑO TABLET COMIC-------- */
 
 @media  screen and (max-width: 768px ) {
     .contenedor_comic{
+        width: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.01fr 0.01fr 0.1fr 0.3fr 0.01fr;
         grid-template-areas:     
@@ -459,7 +463,6 @@ footer{
     } 
     h1{        
         text-align: justify;
-        /* background-color: rgba(116, 13, 13, 0.495); */        
         margin: 5px;
     }
 
@@ -468,11 +471,18 @@ footer{
         margin: 0px 5px;
     }
 
+    .dimension_foto_comic{
+        width: 90%;
+        height: auto;
+    }
+
     .foto_comic{ 
         padding: 10px;
     }
 
     .alinear{
+        /* display: flex;
+        flex-wrap: wrap; */
         border-top: solid 1px orange;
     }
     .estilos_comic ul{
@@ -506,13 +516,30 @@ footer{
         justify-content: center;        
         padding: 10px 10px;
         margin: 0px 80px;        
-    }     
+    } 
+    
+    .area_footer_comic{         
+        position: inherit;                               
+    }    
+    
+    .area_footer_comic div{
+        text-align: center;
+        background-color: rgba(116, 13, 13, 0.495); 
+        padding: 50px; 
+        margin: 5px 0px;    
+    }
+    
+    #grad_footer_comic{
+        background-image: linear-gradient(to top, black,  #202020);
+    }
+    
 }
 
 /* ----TAMAÑO CELU COMIC-------- */
 
 @media  screen and (max-width: 425px ) {
     .contenedor_comic{
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 0.04fr 0.01fr 0.01fr 0.1fr 0.3fr 0.01fr;
         grid-template-areas:     
@@ -528,8 +555,7 @@ footer{
         width: 800px;
         height: 100%;
         border-left: none;
-        border-right: none;
-        /* padding: 1px;  */          
+        border-right: none;                  
     } 
 
     h1{            
@@ -539,7 +565,21 @@ footer{
     .intro_comic{
         display: none;
     }
+
+    .foto_comic{
+        text-align: center;                
+    }
     
+    .dimension_foto_comic{
+        width: 80%;
+        height: auto;
+    }
+
+    .alinear{
+        display: flex;
+        flex-wrap: wrap;           
+    }
+
     .menu_principal_comic ul{
         display: flex;
         flex-direction: column;
@@ -550,6 +590,21 @@ footer{
 
     .menu_principal_comic ul li{
         padding: 15px 15px;        
+    }
+
+    .area_footer_comic{      
+        position: inherit;                               
+    }    
+    
+    .area_footer_comic div{
+        text-align: center;
+        background-color: rgba(116, 13, 13, 0.495); 
+        padding: 30px; 
+        margin: 20px 0px;    
+    }
+
+    #grad_footer_comic{
+        background-image: linear-gradient(to top, black,  #202020);
     }
 
 }
