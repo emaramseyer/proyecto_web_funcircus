@@ -17,13 +17,11 @@
 </head>
 <body id="inicio">
     
-    <div class="contenedor_comic">
-
-         
-        <header >
-            <div id="grad" class="area_logo_comic">
-                <img class = "logo_comic" src="../multimedia/logonombre.png" alt="funcircus">
-            </div>
+    <div class="contenedor_comic"> 
+        <div id="grad" class="area_logo_comic">
+            <img class = "logo_comic" src="../multimedia/logonombre.png" alt="funcircus">
+        </div>        
+        <header class="header_comic">
             <nav class = "menu_principal_comic">
                 <ul>                
                     <li> <a href="../index.html" >Home</a></li>
@@ -36,29 +34,29 @@
             </nav>        
         </header >
         
-        <main class="area_main_comic">            
-            
-            <h1 class="titulo">COMIC FUNCIRCUS</h1>
+        <main class="area_main_comic">           
+            <div class="titulo_intro">
+                <h1 class="titulo">COMIC FUNCIRCUS</h1>
+                <div class="intro_comic">
+                    <p>El 4 de Marzo de 2015, se realizó la presentación oficial del primer tomo de la revista de historietas, editada por la banda de rock cordobesa FUNCIRCUS, y realizada por el célebre ilustrador Fernando León Junior González. Cuarenta páginas en el formato del cómic americano, dan marco a un relato de aventuras. Los ejemplares contienen además un simple con dos nuevos temas del grupo.</p>
+                </div> 
+            </div>           
+        </main> 
 
-            <div class="intro_comic">
-                <p>El 4 de Marzo de 2015, se realizó la presentación oficial del primer tomo de la revista de historietas, editada por la banda de rock cordobesa FUNCIRCUS, y realizada por el célebre ilustrador Fernando León Junior González. Cuarenta páginas en el formato del cómic americano, dan marco a un relato de aventuras. Los ejemplares contienen además un simple con dos nuevos temas del grupo.</p>
-            </div>            
-            
-            <div class = "alinear">
-                <div class="foto_comic">
-                    <img src="../multimedia/tapa2.jpg" alt="foto comic">
-                </div>
-                <div class="estilos_comic">
-                    <ul>
-                        <li><a href="#capitulo1"> Capitulo 1: El Anvil de Peter</a></li>
-                        <li><a href="#capitulo2">Capitulo 2: Fran y cía. en el bar de los Clowns</a></li>
-                        <li><a href="#capitulo3">Capitulo 3: Carga pesada</a></li>
-                        <li><a href="#capitulo4">Capitulo 4: Max saliendo del estudio</a></li>
-                        <li><a href="#capitulo5">Capitulo 5: Ivanov y Dimitri</a> </li>
-                    </ul>
-                </div>    
-            </div>       
-        </main>   
+        <div class = "alinear">
+            <div class="foto_comic">
+                <img src="../multimedia/tapa2.jpg" alt="foto comic">
+            </div>
+            <div class="estilos_comic">
+                <ul>
+                    <li><a href="#capitulo1"> Capitulo 1: El Anvil de Peter</a></li>
+                    <li><a href="#capitulo2">Capitulo 2: Fran y cía. en el bar de los Clowns</a></li>
+                    <li><a href="#capitulo3">Capitulo 3: Carga pesada</a></li>
+                    <li><a href="#capitulo4">Capitulo 4: Max saliendo del estudio</a></li>
+                    <li><a href="#capitulo5">Capitulo 5: Ivanov y Dimitri</a> </li>
+                </ul>
+            </div>    
+        </div>  
 
         <section class="capitulos">
             <hr color="orange" id="capitulo1">
@@ -130,25 +128,26 @@
         </section>
 
         <footer class="area_footer_comic">            
-                    
-            <a href="https://www.instagram.com/funcircus/?next=%2F" target="_blank">            
-                <img  src="../multimedia/instagramposta.png" alt="funcircus">
-            </a>        
-            <a href="https://www.youtube.com/channel/UCqfKND1SQLizAcFB76YFqyg" target="_blank">            
-                <img  src="../multimedia/youtubeposta.png" alt="funcircus">
-            </a>
-            <a href="https://open.spotify.com/artist/7AnV8pJGP8qV0mYkSmvgi4?si=b0TH5zb7TReTzyYShqSKiQ" target="_blank">            
-                <img  src="../multimedia/spoti.png" alt="funcircus">
-            </a>
-            <a href="https://www.facebook.com/funcircusrock" target="_blank">            
-                <img  src="../multimedia/facebookposta.png" alt="funcircus">
-            </a>
-            <a href="https://twitter.com/funcircus_rock" target="_blank">            
-                <img  src="../multimedia/tweeterposta.png" alt="funcircus">
-            </a>
-            <a href="https://music.apple.com/ar/album/el-centro-del-v%C3%A9rtigo/1440279933" target="_blank">            
-                <img  src="../multimedia/itunesposta.png" alt="funcircus"> 
-            </a>               
+            <div id = "grad_footer">
+                <a href="https://www.instagram.com/funcircus/?next=%2F" target="_blank">            
+                    <img  src="../multimedia/instagramposta.png" alt="funcircus">
+                </a>        
+                <a href="https://www.youtube.com/channel/UCqfKND1SQLizAcFB76YFqyg" target="_blank">            
+                    <img  src="../multimedia/youtubeposta.png" alt="funcircus">
+                </a>
+                <a href="https://open.spotify.com/artist/7AnV8pJGP8qV0mYkSmvgi4?si=b0TH5zb7TReTzyYShqSKiQ" target="_blank">            
+                    <img  src="../multimedia/spoti.png" alt="funcircus">
+                </a>
+                <a href="https://www.facebook.com/funcircusrock" target="_blank">            
+                    <img  src="../multimedia/facebookposta.png" alt="funcircus">
+                </a>
+                <a href="https://twitter.com/funcircus_rock" target="_blank">            
+                    <img  src="../multimedia/tweeterposta.png" alt="funcircus">
+                </a>
+                <a href="https://music.apple.com/ar/album/el-centro-del-v%C3%A9rtigo/1440279933" target="_blank">            
+                    <img  src="../multimedia/itunesposta.png" alt="funcircus"> 
+                </a> 
+            </div>                      
         
         </footer>
     </div>

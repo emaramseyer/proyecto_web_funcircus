@@ -293,28 +293,48 @@ footer{
 .contenedor_comic{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.01fr 0.01fr 0.1fr 0.3fr 0.01fr;
+    grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.3fr 0.01fr;
     grid-template-areas:     
     "logo_comic"
     "menu_comic"
-    "main_comic"    
+    "main_comic" 
+    "alinear"   
     "capitulos"
     "footer_comic"; 
 }
 
+.logo_comic{
+    width: 500px;
+    height: 100%;
+    border-left: solid 1px orange;
+    border-right: solid 1px orange;
+    padding: 1px;           
+} 
+
+#grad{
+    background-image: linear-gradient(to top, black,  #202020);
+}
+
 .area_logo_comic{
+    position: sticky;
+    top: 0px;
+    z-index: 1000px;
     grid-area: logo_comic;
     display: flex;
     justify-content: center; 
 }
 
-.area_main_comic{
-    grid-area: main_comic;
-
+.header_comic{
+    position: sticky;
+    top: 94px;
+    z-index: 1000px;
 }
 
-.intro_comic{
-    
+.area_main_comic{
+    grid-area: main_comic;
+}
+
+.intro_comic{    
     color: orange;
     font-size: 15px;
     background-color:  rgba(116, 13, 13, 0.495);
@@ -327,27 +347,6 @@ footer{
     padding: 40px;
 }
 
-
-.capitulos{
-    grid-area: capitulos;
-}
-
-.area_footer_comic{
-    grid-area: footer_comic;
-             
-}
-
-/*----------------------Logo y header comic----------------*/
-.logo_comic{
-    width: 500px;
-    height: 100%;
-    border-left: solid 1px orange;
-    border-right: solid 1px orange;
-    padding: 5px;           
-}
-#grad{
-    background-image: linear-gradient(to top, black,  #202020);
-}
 .menu_principal_comic{
     grid-area: menu_comic; 
     background-color: rgba(116, 13, 13, 0.495);   
@@ -378,6 +377,7 @@ footer{
 }
 
 .alinear{
+    grid-area: alinear;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -408,6 +408,10 @@ footer{
     margin: 10px 50px 0px 0px;        
 }
 
+.capitulos{
+    grid-area: capitulos;
+}
+
 .capitulos div{
     background-color:  rgba(116, 13, 13, 0.495);
     margin: 10px 150px;
@@ -435,6 +439,123 @@ footer{
     display: block;
     text-align: center;    
 }
+
+.area_footer_comic{
+    grid-area: footer_comic;             
+}
+
+/* ----TAMAÑO TABLET COMIC-------- */
+
+@media  screen and (max-width: 768px ) {
+    .contenedor_comic{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.01fr 0.01fr 0.1fr 0.3fr 0.01fr;
+        grid-template-areas:     
+        "logo_comic logo_comic"
+        "main_comic menu_comic"
+        "alinear alinear"    
+        "capitulos capitulos"
+        "footer_comic footer_comic";     
+    } 
+    h1{        
+        text-align: justify;
+        /* background-color: rgba(116, 13, 13, 0.495); */        
+        margin: 5px;
+    }
+
+    .intro_comic{    
+        background-color: #202020; 
+        margin: 0px 5px;
+    }
+
+    .foto_comic{ 
+        padding: 10px;
+    }
+
+    .alinear{
+        border-top: solid 1px orange;
+    }
+    .estilos_comic ul{
+        padding: 25px; 
+        margin: 10px 1px 0px 0px;        
+    }
+
+    .area_logo_comic{
+        border-bottom: solid 1px orange;        
+    }
+
+    .header_comic{
+        position: inherit;
+    }
+
+    .menu_principal_comic{
+        border-top: none;
+        border-bottom: none;
+        margin: 0px;             
+    }
+
+    .menu_principal_comic ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;               
+    } 
+
+    .menu_principal_comic ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        padding: 10px 10px;
+        margin: 0px 80px;        
+    }     
+}
+
+/* ----TAMAÑO CELU COMIC-------- */
+
+@media  screen and (max-width: 425px ) {
+    .contenedor_comic{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.04fr 0.01fr 0.01fr 0.1fr 0.3fr 0.01fr;
+        grid-template-areas:     
+        "logo_comic"
+        "menu_comic"
+        "main_comic"
+        "alinear"    
+        "capitulos"
+        "footer_comic";     
+    } 
+
+    .logo_comic{
+        width: 800px;
+        height: 100%;
+        border-left: none;
+        border-right: none;
+        /* padding: 1px;  */          
+    } 
+
+    h1{            
+        margin: 10px;
+    }
+
+    .intro_comic{
+        display: none;
+    }
+    
+    .menu_principal_comic ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: solid 1px orange;
+        border-bottom: solid 1px orange;
+    } 
+
+    .menu_principal_comic ul li{
+        padding: 15px 15px;        
+    }
+
+}
+
+
+
 
 
 /* ---------PAGINA INTEGRANTES---------------------*/
