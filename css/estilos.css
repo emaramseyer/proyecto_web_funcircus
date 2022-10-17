@@ -305,18 +305,19 @@ h1{
 }
 
 .logo_comic{
-    width: 500px;
-    height: 100%;
+    width: 60%;
+    height: auto;    
     border-left: solid 1px orange;
     border-right: solid 1px orange;
     padding: 1px;           
 } 
 
-#grad{
+#grad_comic{
     background-image: linear-gradient(to top, black,  #202020);
 }
 
 .area_logo_comic{
+    /* width: 100%; */
     position: sticky;
     top: 0px;
     z-index: 1000px;
@@ -327,7 +328,7 @@ h1{
 
 .header_comic{
     position: sticky;
-    top: 94px;
+    top: 114.5px;
     z-index: 1000px;
 }
 
@@ -381,7 +382,8 @@ h1{
     grid-area: alinear;
     display: flex;
     flex-direction: row;
-    justify-content: center;               
+    justify-content: center; 
+                  
 }
 
 .estilos_comic ul li a{
@@ -410,27 +412,35 @@ h1{
 }
 
 .capitulos{
-    grid-area: capitulos;
+    width: 100%;
+    grid-area: capitulos;    
 }
 
 .capitulos div{
+    /* width: 100%;  */
     background-color:  rgba(116, 13, 13, 0.495);
-    margin: 10px 150px;
+    /* margin: 10px 150px; */    
     padding: 5px;
     text-align: center;
+     
 }
 
 .capitulos div img{
-    width: 500px;
-    height: 800px;
-    margin: 5px;         
+    width: 90%;
+    /* width: 500px; */
+    height: auto;
+    margin: 5px; 
+    /* display: flex;
+    flex-wrap: wrap;  */       
 }
 
 .capitulos h2{
+    /* width: 100%; */
     font-size: 20px;
     text-align: justify;
     color: orange;
-    margin: 10px 150px;
+    margin: 10px;
+    border-top: solid 1px orange;  
 }
 
 .capitulos div a{
@@ -517,6 +527,8 @@ h1{
         padding: 10px 10px;
         margin: 0px 80px;        
     } 
+
+
     
     .area_footer_comic{         
         position: inherit;                               
@@ -589,7 +601,8 @@ h1{
     } 
 
     .menu_principal_comic ul li{
-        padding: 15px 15px;        
+        padding: 15px 15px; 
+        margin: 0px 200px;       
     }
 
     .area_footer_comic{      
@@ -608,9 +621,6 @@ h1{
     }
 
 }
-
-
-
 
 
 /* ---------PAGINA INTEGRANTES---------------------*/
