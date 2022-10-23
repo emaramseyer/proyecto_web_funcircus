@@ -43,8 +43,10 @@ h1{
 }
 
 .logo{
-    width: 500px;
-    height: 100%;
+    width: 60%;
+    height: auto;
+    /* width: 500px;
+    height: 100%; */
     border-left: solid 1px orange;
     border-right: solid 1px orange;
     padding: 1px;           
@@ -279,7 +281,7 @@ h1{
     .area_footer div{
         text-align: center;
         background-color: rgba(116, 13, 13, 0.495); 
-        padding: 30px; 
+        padding: 5px; 
         margin: 20px 0px;    
     }
 
@@ -294,7 +296,7 @@ h1{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.3fr 0.01fr;
+    grid-template-rows: 0.01fr 0.01fr 0.01fr 0.01fr 0.5fr 0.01fr;
     grid-template-areas:     
     "logo_comic"
     "menu_comic"
@@ -309,18 +311,14 @@ h1{
     height: auto;    
     border-left: solid 1px orange;
     border-right: solid 1px orange;
-    padding: 1px;           
+    padding: 10px;           
 } 
 
 #grad_comic{
-    background-image: linear-gradient(to top, black,  #202020);
+    background-image: linear-gradient(to top, black,  #202020);    
 }
 
 .area_logo_comic{
-    /* width: 100%; */
-    position: sticky;
-    top: 0px;
-    z-index: 1000px;
     grid-area: logo_comic;
     display: flex;
     justify-content: center; 
@@ -328,7 +326,7 @@ h1{
 
 .header_comic{
     position: sticky;
-    top: 114.5px;
+    top: 0px;   
     z-index: 1000px;
 }
 
@@ -336,13 +334,20 @@ h1{
     grid-area: main_comic;
 }
 
-.intro_comic{    
+.centrar_intro_comic{
+    display: flex;
+    justify-content: center;
+}
+
+.intro_comic{
+    width: 80%; 
+    height: auto;   
     color: orange;
     font-size: 15px;
     background-color:  rgba(116, 13, 13, 0.495);
-    margin: 10px 275px;
+    margin: 10px 0px;
     padding: 5px;
-    text-align: justify;
+    text-align: justify;    
 }
 
 .foto_comic{    
@@ -412,7 +417,7 @@ h1{
 }
 
 .capitulos{
-    width: 100%;
+    /* width: 100%; */
     grid-area: capitulos;    
 }
 
@@ -425,21 +430,18 @@ h1{
      
 }
 
-.capitulos div img{
-    width: 90%;
-    /* width: 500px; */
+.comic{
+    width: 50%;    
     height: auto;
-    margin: 5px; 
-    /* display: flex;
-    flex-wrap: wrap;  */       
+    margin: 5px;
 }
 
+
 .capitulos h2{
-    /* width: 100%; */
     font-size: 20px;
     text-align: justify;
     color: orange;
-    margin: 10px;
+    margin: 10px 0px;
     border-top: solid 1px orange;  
 }
 
@@ -470,15 +472,25 @@ h1{
         "alinear alinear"    
         "capitulos capitulos"
         "footer_comic footer_comic";     
-    } 
+    }    
+    
+    .area_logo_comic{        
+        position: sticky;
+        top: 0px;
+        z-index: 1000px; 
+        border-bottom: solid 1px orange;        
+    }
+
     h1{        
         text-align: justify;
-        margin: 5px;
+        /* margin: 0px; */
+        padding: 5px;
     }
 
     .intro_comic{    
         background-color: #202020; 
         margin: 0px 5px;
+        width: 90%;
     }
 
     .dimension_foto_comic{
@@ -498,10 +510,6 @@ h1{
     .estilos_comic ul{
         padding: 25px; 
         margin: 10px 1px 0px 0px;        
-    }
-
-    .area_logo_comic{
-        border-bottom: solid 1px orange;        
     }
 
     .header_comic{
@@ -527,8 +535,6 @@ h1{
         padding: 10px 10px;
         margin: 0px 80px;        
     } 
-
-
     
     .area_footer_comic{         
         position: inherit;                               
@@ -564,14 +570,15 @@ h1{
     } 
 
     .logo_comic{
-        width: 800px;
-        height: 100%;
+        /* width: 800px;
+        height: 100%; */
         border-left: none;
         border-right: none;                  
     } 
 
-    h1{            
-        margin: 10px;
+    h1{ 
+        text-align: center;           
+        /* margin: 10px 0px; */
     }
 
     .intro_comic{
@@ -602,17 +609,17 @@ h1{
 
     .menu_principal_comic ul li{
         padding: 15px 15px; 
-        margin: 0px 200px;       
+        /* margin: 0px 0px; */       
     }
 
     .area_footer_comic{      
         position: inherit;                               
     }    
     
-    .area_footer_comic div{
+    .area_footer_comic div{        
         text-align: center;
         background-color: rgba(116, 13, 13, 0.495); 
-        padding: 30px; 
+        padding: 10px; 
         margin: 20px 0px;    
     }
 
@@ -622,8 +629,54 @@ h1{
 
 }
 
-
 /* ---------PAGINA INTEGRANTES---------------------*/
+
+#grad_integrantes{
+    width: 100%;
+    background-image: linear-gradient(to top, black,  #202020);
+    display: flex;
+    justify-content: center;
+}
+
+.logo_integrantes{
+    width: 40%;
+    height: auto;    
+    border-left: solid 1px orange;
+    border-right: solid 1px orange;
+    padding: 1px;                  
+} 
+
+.menu_principal_integrantes{
+    background-color: rgba(116, 13, 13, 0.495);   
+    text-align: center; 
+    border-top: solid 1px orange;
+    border-bottom: solid 1px orange; 
+    margin: 0px 0px 10px 0px;
+}
+
+.menu_principal_integrantes ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+.menu_principal_integrantes ul li{
+    list-style-type: none; 
+    padding: 20px 20px;  
+      
+} 
+.menu_principal_integrantes ul li a{
+    color: orange;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 5px;
+    font-weight: bold;
+    background-color: #202020;     
+}
+.menu_principal_integrantes ul li a:hover{
+    background-color: orange;
+    color:black;
+} 
+
 .estilos_lista_integrantes{
     text-align: center;
     padding: 40px 500px ;        
@@ -655,17 +708,13 @@ h1{
     list-style-image:url("../multimedia/bata.png");
 }
 
-.integrantes_banda{
-    display: inline-block;
-    text-align: center;    
+h1{    
+    margin: 0px ;
 }
 
 .integrantes_banda div{
     background-color: rgba(116, 13, 13, 0.495);
-    width: 700px;
-    height: 390px;
-    margin: 20px;
-    display: inline-block;      
+    margin: 20px 0px;    
 }
 
 .integrantes_banda div p{
@@ -676,9 +725,9 @@ h1{
 }
 
 .integrantes_banda div img{
-    width: 50%;
-    height: 70%;
-    margin: 5px;
+    width: 40%;
+    height: auto;
+    margin: 5px;    
 }
 
 .integrantes_banda div p span{
@@ -693,8 +742,18 @@ h1{
     color: orangered;
     font-size: 15px;
     text-decoration: none;
-    margin: 655px;
+    /* margin: 655px; */
 }
+
+.area_footer_integrantes{
+    position: fixed;
+    bottom: 1px;                 
+}
+
+#grad_footer_integrantes{
+    background-image: linear-gradient(to top, black,  #202020);
+}
+
 
 /* ------------- PAGINA CONTACTO------------------------------*/
 .estilos_formulario{
