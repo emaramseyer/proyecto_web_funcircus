@@ -244,6 +244,8 @@ h1{
     }    
 
     .logo{
+        width: 90%;
+        height: auto;
         border-left: none;
         border-right: none;                         
     } 
@@ -311,7 +313,7 @@ h1{
     height: auto;    
     border-left: solid 1px orange;
     border-right: solid 1px orange;
-    padding: 10px;           
+    padding: 1px;           
 } 
 
 #grad_comic{
@@ -431,7 +433,7 @@ h1{
 }
 
 .comic{
-    width: 50%;    
+    width: 70%;    
     height: auto;
     margin: 5px;
 }
@@ -570,11 +572,11 @@ h1{
     } 
 
     .logo_comic{
-        /* width: 800px;
-        height: 100%; */
+        width: 90%;
+        height: auto;
         border-left: none;
         border-right: none;                  
-    } 
+    }     
 
     h1{ 
         text-align: center;           
