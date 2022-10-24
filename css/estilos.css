@@ -345,9 +345,14 @@ h1{
     color: orange;
     font-size: 15px;
     background-color:  rgba(116, 13, 13, 0.495);
-    margin: 10px 0px;
+   /*  margin: 10px 0px; */
     padding: 5px;
     text-align: justify;    
+}
+
+.dimension_foto_comic{
+    width: 100%;
+    height: auto;
 }
 
 .foto_comic{    
@@ -355,7 +360,8 @@ h1{
 }
 
 .menu_principal_comic{ 
-    width: 100%;   
+    width: 100%;
+    height: auto;   
     grid-area: menu_comic; 
     background-color: rgba(116, 13, 13, 0.495);   
     text-align: center; 
@@ -416,6 +422,12 @@ h1{
     margin: 10px 50px 0px 0px;        
 }
 
+.comic{
+    width: 90%;    
+    height: auto;
+    margin: 5px;
+}
+
 .capitulos{
     grid-area: capitulos;    
 }
@@ -431,6 +443,14 @@ h1{
     width: 70%;    
     height: auto;
     margin: 5px;
+}
+
+h3{
+    width: 30%;
+    background-color: black;
+    padding: 5px;
+    font-size: 18px;
+    color: orange; 
 }
 
 
@@ -483,6 +503,10 @@ h1{
         padding: 5px;        
     }
 
+    h3{        
+        font-size: 15px;         
+    }
+
     .intro_comic{    
         background-color: #202020; 
         margin: 0px 5px;
@@ -490,8 +514,7 @@ h1{
     }
 
     .dimension_foto_comic{
-        width: 90%;
-        height: auto;
+        width: 90%;        
     }
 
     .foto_comic{ 
@@ -499,8 +522,6 @@ h1{
     }
 
     .alinear{
-        /* display: flex;
-        flex-wrap: wrap; */
         border-top: solid 1px orange;
     }
     .estilos_comic ul{
@@ -538,8 +559,7 @@ h1{
     .area_footer_comic div{
         text-align: center;
         background-color: rgba(116, 13, 13, 0.495); 
-        padding: 50px; 
-        /* margin: 5px 0px; */    
+        padding: 50px;            
     }
     
     #grad_footer_comic{
@@ -576,6 +596,17 @@ h1{
         /* margin: 10px 0px; */
     }
 
+    .capitulos h2{
+        font-size: 15px;        
+        margin: 20px 0px;
+        padding: 1px;        
+    }
+
+    h3{  
+        width: 100%;      
+        font-size: 50px;         
+    }
+
     .intro_comic{
         display: none;
     }
@@ -585,8 +616,7 @@ h1{
     }
     
     .dimension_foto_comic{
-        width: 80%;
-        height: auto;
+        width: 80%;        
     }
 
     .alinear{
