@@ -318,11 +318,11 @@ body{
     justify-content: center; 
 }
 
-.header_comic{
+/* .header_comic{
     position: sticky;
     top: 94px;   
     z-index: 1000px;
-}
+} */
 
 .area_main_comic{
     grid-area: main_comic;
@@ -446,7 +446,7 @@ h1{
 }
 
 h3{
-    width: 30%;
+    width: 40%;
     background-color: black;
     padding: 5px;
     font-size: 18px;
