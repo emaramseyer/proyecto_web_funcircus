@@ -12,8 +12,7 @@ html{
 }
 
 body{
-    background-color: #202020;
-    /* background-color:black; */
+    background-color: #202020;    
     font-style: italic;   
     font-family: 'Montserrat', sans-serif;
 }
@@ -35,9 +34,7 @@ body{
 
 .logo{
     width: 60%;
-    height: auto;
-    /* width: 500px;
-    height: 100%; */
+    height: auto;    
     border-left: solid 1px orange;
     border-right: solid 1px orange;
     padding: 1px;           
@@ -54,12 +51,6 @@ body{
     grid-area: logo;
     display: flex;
     justify-content: center; 
-}
-
-.header_index{
-    position: sticky;
-    top: 94px;
-    z-index: 1000px;
 }
 
 .area_main{
@@ -137,7 +128,6 @@ body{
     bottom: 1px;                 
 }
 
-
 /* ----TAMAÑO TABLET INDEX-------- */
 
  @media  screen and (max-width: 768px ) {
@@ -162,8 +152,7 @@ body{
 
     .menu_principal{
         border-top: none;
-        border-bottom: none;
-        /* margin: 0px;  */            
+        border-bottom: none;                  
     }
 
     .menu_principal ul{
@@ -214,8 +203,7 @@ body{
     
     #grad_footer{
         background-image: linear-gradient(to top, black,  #202020);
-    }
-    
+    }    
 } 
 
 /* ----TAMAÑO CELU INDEX-------- */
@@ -272,8 +260,7 @@ body{
     .area_footer div{
         text-align: center;
         background-color: rgba(116, 13, 13, 0.495); 
-        padding: 5px; 
-        /* margin: 20px 0px; */    
+        padding: 5px;          
     }
 
     #grad_footer{
@@ -338,8 +325,7 @@ h1{
     height: auto;   
     color: orange;
     font-size: 15px;
-    background-color:  rgba(116, 13, 13, 0.495);
-   /*  margin: 10px 0px; */
+    background-color:  rgba(116, 13, 13, 0.495);   
     padding: 5px;
     text-align: justify;    
 }
@@ -353,9 +339,7 @@ h1{
     padding: 40px;
 }
 
-.menu_principal_comic{ 
-    /* width: 100%; */
-    /* height: auto;  */  
+.menu_principal_comic{      
     grid-area: menu_comic; 
     background-color: rgba(116, 13, 13, 0.495);   
     text-align: center; 
@@ -389,8 +373,7 @@ h1{
     grid-area: alinear;
     display: flex;
     flex-direction: row;
-    justify-content: center; 
-                  
+    justify-content: center;                   
 }
 
 .estilos_comic ul li a{
@@ -429,8 +412,7 @@ h1{
 .capitulos div{
     background-color:  rgba(116, 13, 13, 0.495);
     padding: 5px;
-    text-align: center;
-     
+    text-align: center;     
 }
 
 .comic{
@@ -446,7 +428,6 @@ h3{
     font-size: 18px;
     color: orange; 
 }
-
 
 .capitulos h2{
     font-size: 20px;
@@ -530,16 +511,14 @@ h3{
     .menu_principal_comic{
         height: 350px;
         border-top: none;
-        border-bottom: none;
-                          
+        border-bottom: none;                          
     }
 
     .menu_principal_comic ul{
         height: 350px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-                             
+        justify-content: center;                             
     } 
 
     .menu_principal_comic ul li{
@@ -562,8 +541,7 @@ h3{
     
     #grad_footer_comic{
         background-image: linear-gradient(to top, black,  #202020);
-    }
-    
+    }    
 }
 
 /* ----TAMAÑO TABLET 2 COMIC-------- */
@@ -574,7 +552,6 @@ h3{
         font-size: 10px;
     }
 }
-
 
 /* ----TAMAÑO CELU COMIC-------- */
 
@@ -654,8 +631,7 @@ h3{
     .area_footer_comic div{        
         text-align: center;
         background-color: rgba(116, 13, 13, 0.495); 
-        padding: 5px; 
-        /* margin: 20px 0px;  */   
+        padding: 5px;          
     }
 
     #grad_footer_comic{
@@ -663,266 +639,4 @@ h3{
     }
 
 }
-
-/* ---------PAGINA INTEGRANTES---------------------*/
-
-#grad_integrantes{
-    width: 100%;
-    background-image: linear-gradient(to top, black,  #202020);
-    display: flex;
-    justify-content: center;
-}
-
-.logo_integrantes{
-    width: 40%;
-    height: auto;    
-    border-left: solid 1px orange;
-    border-right: solid 1px orange;
-    padding: 1px;                  
-} 
-
-.menu_principal_integrantes{
-    background-color: rgba(116, 13, 13, 0.495);   
-    text-align: center; 
-    border-top: solid 1px orange;
-    border-bottom: solid 1px orange; 
-    margin: 0px 0px 10px 0px;
-}
-
-.menu_principal_integrantes ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} 
-.menu_principal_integrantes ul li{
-    list-style-type: none; 
-    padding: 20px 20px;  
-      
-} 
-.menu_principal_integrantes ul li a{
-    color: orange;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 5px;
-    font-weight: bold;
-    background-color: #202020;     
-}
-.menu_principal_integrantes ul li a:hover{
-    background-color: orange;
-    color:black;
-} 
-
-.estilos_lista_integrantes{
-    text-align: center;
-    padding: 40px 500px ;        
-    background-image: url("../multimedia/integrantes.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;          
-}
-
-.estilos_lista_integrantes ul li a{
-    color: orange;
-    font-size: 18px;
-    line-height: 4; 
-    margin: 15px;
-    font-weight: bold;
-    background-color: black;            
-}
-
-.bajo{        
-    list-style-image:url("../multimedia/bajo.png"); 
-           
-}
-.voz{    
-    list-style-image:url("../multimedia/voz.png");    
-}
-.guitarra{    
-    list-style-image:url("../multimedia/guitarra.png");
-}
-.bata{    
-    list-style-image:url("../multimedia/bata.png");
-}
-
-h1{    
-    margin: 0px ;
-}
-
-.integrantes_banda div{
-    background-color: rgba(116, 13, 13, 0.495);
-    margin: 20px 0px;    
-}
-
-.integrantes_banda div p{
-    color: orange; 
-    font-size: 15px; 
-    text-align: justify;
-    padding: 10px;          
-}
-
-.integrantes_banda div img{
-    width: 40%;
-    height: auto;
-    margin: 5px;    
-}
-
-.integrantes_banda div p span{
-    font-size: 20px;
-    background-color: orange;
-    color: black; 
-    font-weight: bold;
-    padding: 4px;   
-}
-
-.integrantes_banda div a{
-    color: orangered;
-    font-size: 15px;
-    text-decoration: none;
-    /* margin: 655px; */
-}
-
-.area_footer_integrantes{
-    position: fixed;
-    bottom: 1px;                 
-}
-
-#grad_footer_integrantes{
-    background-image: linear-gradient(to top, black,  #202020);
-}
-
-
-/* ------------- PAGINA CONTACTO------------------------------*/
-.estilos_formulario{
-    color: orange; 
-    font-size: 20px;
-    text-align: center;
-    background-color: rgba(116, 13, 13, 0.495);
-    margin: 5px 275px;
-}
-
-.estilos_formulario div{
-    display: block;
-    margin: 20px;       
-}
-
-.mensaje label{
-    display: block;
-    margin: 0px 300px 0px 5px;    
-}
-
-.estilos_formulario div input, textarea{
-    background-color: orange;
-    font-size: 20px;         
-}
-
-.estilos_formulario select{
-    background-color: orange;
-    font-size: 15px;
-    font-weight: bold;     
-}
-
-/* ------------- PAGINA MULTIMEDIA------------------------------*/
-.videos_funcircus div{
-    background-color: rgba(116, 13, 13, 0.495);
-    margin: 10px 275px;
-    padding: 5px;    
-}
-
-.videos_funcircus h2{
-    font-size: 20px;
-    text-align: justify;
-    color: orange;
-    margin: 0px 275px;
-}
-
-.videos_funcircus p{
-    color: orange;
-    font-size: 15px;
-    margin: 10px 0px;
-}
-
-.menu_multimedia{
-    text-align: center;
-}
-
-.menu_multimedia ul li a{
-    color: orange;
-    font-size: 18px;
-    line-height: 4; 
-    margin: 15px;
-    font-weight: bold;
-    background-color: rgba(116, 13, 13, 0.495);
-    text-decoration: none;
-}
-
-.videos_funcircus div a{
-    color: orangered;
-    font-size: 15px;
-    text-decoration: none;
-    display: block;
-    text-align: center;    
-}
-
-
-/* ------------- PAGINA DISCOGRAFIA------------------------------*/
-.discografia_funcircus div{
-    background-color: rgba(116, 13, 13, 0.495);
-    margin: 10px 275px;
-    padding: 5px;    
-}
-
-.discografia_funcircus h2{
-    font-size: 20px;
-    text-align: justify;
-    color: orange;
-    margin: 0px 275px;
-}
-
-.discografia_funcircus p{
-    color: orange;
-    font-size: 15px;
-    margin: 10px 0px;
-}
-
-.discografia_funcircus div a{
-    color: orangered;
-    font-size: 15px;
-    text-decoration: none;
-    display: block;
-    text-align: center;    
-}
-
-/*--PAGINA PRUEBA-FLEXBOX*/
-
-.flex_padre{
-    /*height: 1500px;*/
-    /*background-color:rgb(182, 17, 17);*/
-    /*margin: 40px 275px;*/
-    color: orange;
-    font-size: 15px;
-    /*border: solid 2px orange;*/
-    
-    display: flex;
-    flex-direction: row;
-    /*flex-direction: row-reverse;*/
-    /*flex-direction: column;*/
-    /*flex-direction: column-reverse;*/
-    flex-wrap: wrap;
-    /*flex-wrap: wrap-reverse;*/
-    
-    justify-content: center;
-
-    /* ALIGN ITEM SE UTILIZA SI TENEMOS SOLO 1 LINEA/FILA DE HIJOS*/
-    /*align-items: stretch; /*solo funciona si los hijos no tienen ningun tamaño predeterminado*/
-    /*align-items: center;*/
-    /* ALIGN CONTENT SE UTILIZA SI TENEMOS MAS DE 1 LINEA/FILA DE HIJOS*/
-    /*align-content: center;*/
-}
-.flex_padre div img{
-    margin: 10px;
-}
-  
-
-
-
-
 
