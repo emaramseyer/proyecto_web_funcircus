@@ -318,12 +318,6 @@ body{
     justify-content: center; 
 }
 
-/* .header_comic{
-    position: sticky;
-    top: 94px;   
-    z-index: 1000px;
-} */
-
 .area_main_comic{
     grid-area: main_comic;
 }
@@ -597,7 +591,7 @@ h3{
     }
 
     .capitulos h2{
-        font-size: 15px;        
+        font-size: 12px;        
         margin: 20px 0px;
         padding: 1px;        
     }
