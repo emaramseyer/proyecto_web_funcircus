@@ -287,7 +287,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.2fr 0.5fr 0.1fr;
+    grid-template-rows: 0.01fr 0.03fr 0.03fr 0.2fr 0.5fr 0.1fr;
     grid-template-areas:     
     "logo_comic"
     "menu_comic"
@@ -566,6 +566,16 @@ h3{
     
 }
 
+/* ----TAMAÑO TABLET 2 COMIC-------- */
+
+@media  screen and (max-width: 614px ){
+
+    .intro_comic{
+        font-size: 10px;
+    }
+}
+
+
 /* ----TAMAÑO CELU COMIC-------- */
 
 @media  screen and (max-width: 425px ) {
@@ -590,8 +600,7 @@ h3{
     }     
 
     h1{ 
-        text-align: center;           
-        /* margin: 10px 0px; */
+        text-align: center;       
     }
 
     .capitulos h2{
@@ -645,7 +654,7 @@ h3{
     .area_footer_comic div{        
         text-align: center;
         background-color: rgba(116, 13, 13, 0.495); 
-        padding: 10px; 
+        padding: 5px; 
         /* margin: 20px 0px;  */   
     }
 
